@@ -1,0 +1,21 @@
+MovieReviewScrapper.java - called from Merger.java
+
+this is almost fully implemented - Parse through imdb.com for movie reviews. Return to Merger.java.
+*************************************************
+BookReviewScrapper.java - called from Merger.java
+
+this is almost fully implemented - Parse through goodreads.com for book reviews. Return to Merger.java.
+*************************************************
+FreeBaseExtractor.java - called from Merger.java = takes db_name, table, query
+
+this is almost full implemented - Extract from table and return result to Merger.java
+*************************************************
+Merger.java
+
+Merges the required columns and creates 1 text file
+
+******Those Above Are for Creating the Input Data for the Analytic*******
+
+********
+MapReduce 1 will take text file and remove any unnecessary duplicates
+********

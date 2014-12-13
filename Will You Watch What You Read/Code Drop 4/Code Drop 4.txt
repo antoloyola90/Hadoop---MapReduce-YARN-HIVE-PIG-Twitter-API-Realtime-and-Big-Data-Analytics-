@@ -1,0 +1,33 @@
+keep updated code on 
+https://github.com/antoloyola90/WillYouWatchWhatYouRead
+
+MovieReviewScrapper.java - called from Merger.java
+BookReviewScrapper.java - called from Merger.java
+
+this is fully implemented - Parse through imdb.com/goodreads.com for movie/book reviews.
+Appends to input file along with ratings.
+ Return to Merger.java.
+*************************************************
+FreeBaseExtractor.java - called from Merger.java
+
+this is fully implemented - Extract from tables and return result to Merger.java
+*************************************************
+Merger.java
+
+Merges the required columns and creates 1 text file along with adding Movie and Book Ratings
+
+******Those Above Are for Creating the Input Data for the Analytic*******
+
+********
+MapReduce 1 will take text file and remove any unnecessary duplicates
+This is the Movie/Book Scrapper
+********
+MapReduce 2 will take text file and find books/movies which are series and write to series text file
+********
+MapReduce 3 will take text file and write another text file for anomalies (book rating high whereas movie rating low or vice versa)
+********
+MapReduce 4 will take text file and give analytic on the order of the genres of books that make the Best Rated Movies
+********
+Map Reduce 5 will take series text file and say what genre of series are common and the best in movies and books
+********
+Map Reduce 6 will take anomalies text file and say what types of books make the worst movies or vice versa
